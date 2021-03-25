@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        const pObjt1 = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                let rollNo = [1, 2, 3, 4, 5];
+                resolve(rollNo);
+                reject('Error while communication');
+            },2000);
+        });
+
+        //promise consume
+
+        pObjt1.then((rollno) => {
+            console.log(rollno);
+
+        });
+    </script>
+</head>
+<body>
+    Working with Variables
+</body>
+</html>
+
